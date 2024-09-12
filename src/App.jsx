@@ -7,10 +7,19 @@ import Firstprop from './props/Firstprop'
 import Secondprop from './props/Secondprop'
 import Thirdprop from './props/Thirdprop'
 import Fourthprop from './props/Fourthprop'
+import Statemgm from './Statemgm'
  const sample={
   name:"meggu",
   city:"rellivalasa",
   street:"ysr colony"
+
+ }
+ const myCar={
+  model: "audi",
+  year: "2020",
+  dealer:"4s",
+  color:"white"
+
 
  }
 
@@ -28,13 +37,15 @@ function App() {
      <form>
       <label className='e'>student name</label>
       <input type="text"></input>
-       <img src='https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg' />
+      
+     </form>
+     <img src='https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg' />
        <img src='photos/pan.jpeg'alt='photo'/>
        <Firstprop name={sample.street}/>
-       <Secondprop name="avi" />
+       <Secondprop myCar={myCar} />
        <Thirdprop name="ali" />
        <Fourthprop name={sample.name}/>
-     </form>
+       <Statemgm />
      
     </div>
   )
